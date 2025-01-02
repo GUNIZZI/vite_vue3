@@ -5,7 +5,6 @@ import Calcurator from './calcurator/index.vue';
 
 defineProps<{ msg: string }>();
 
-const count = ref(0);
 const msg2 = ref('empty message');
 
 const obj1 = {
@@ -18,12 +17,6 @@ const obj2 = reactive({
     age: 302,
     address: '123 Main St, Anytown, USA',
 });
-
-const incrementCount = () => {
-    count.value++;
-    console.log('click', count.value);
-    // count.value++;
-};
 </script>
 
 <template>
